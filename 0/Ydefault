@@ -1,0 +1,71 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+|  \\    /   O peration     |
+|   \\  /    A nd           |
+|    \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    location    "0";
+    object      Ydefault;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 0 0 0 0 0 0];
+
+internalField   uniform 0;
+
+boundaryField
+{
+    defaultFaces
+    {
+        type            zeroGradient;
+    }
+
+    INLET_NH3
+    {
+        type            fixedValue;
+        value           uniform 0;
+    }
+
+    INLET_AIR
+    {
+        type            fixedValue;
+        value           uniform 0;
+    }
+
+    OUTLET_AIR
+    {
+        type            zeroGradient;
+    }
+
+    WALL_BUILDING
+    {
+        type            zeroGradient;
+    }
+
+    WALL_SIDE_01
+    {
+        type            zeroGradient;
+    }
+
+    WALL_SIDE_02
+    {
+        type            zeroGradient;
+    }
+
+    WALL_TOP
+    {
+        type            zeroGradient;
+    }
+
+    WALL_BOTTOM
+    {
+        type            zeroGradient;
+    }
+}
+
