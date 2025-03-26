@@ -1,3 +1,6 @@
-Ubuntu 22.04
-OpenFOAM-8
-GPT made
+OS: Ubuntu 22.04  
+
+Version: OpenFOAM-8  
+
+Thanks to GPT for the help!  
+
